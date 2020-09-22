@@ -1,12 +1,12 @@
 'use strict;';
-
+//console.log('ddd');
 const request = require('request');
 
 const fetchBreedDescription = function(breedName, callback) {
 
   const url = `https://api.thecatapi.com/v1/breeds/search?q=${breedName}`;
   request(url, (error, resp, body) => {
-  // console.log(body);
+   console.log(body);
   // console.log(typeof body);
 
     if (error) {
